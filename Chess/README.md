@@ -1,0 +1,20 @@
+# Chess
+
+Real-time multiplayer chess. React + Vite client, Node.js (Express + Socket.IO) server. MySQL is planned for later (history, ratings, plugins).
+
+## Features (v1)
+- Name-only entry, no sign-up
+- Lobby: quick match, create game (choose color), list/join open games, share-by-link
+- Local two-player mode (flip board, undo)
+- Server-validated moves (chess.js), check/mate/draw detection, promotion, resign
+- Mobile-first layout, tap-to-move with legal-move hints
+
+## Run
+```bash
+npm run install:all
+npm run dev        # client http://localhost:5173, server :3001
+```
+Production: `npm start` (builds client, serves it from the Node server on :3001).
+
+## Roadmap
+Clocks, draw offers, rematch, spectator list, MySQL persistence, game variants/plugins.
